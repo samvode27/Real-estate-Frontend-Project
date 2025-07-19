@@ -1,0 +1,55 @@
+.companies-section {
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  overflow: hidden;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  /* Optional padding to prevent clipping */
+  padding: 10px 0;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+.company-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  max-width: 160px;
+  height: 90px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.company-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.company-logo {
+  max-height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.company-card:hover .company-logo {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

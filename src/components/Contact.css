@@ -1,0 +1,12 @@
+.contact-section .card {
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.contact-section .btn {
+  transition: background-color 0.3s ease;
+}
+
+.contact-section .btn:hover {
+  background-color: #004080;
+}
