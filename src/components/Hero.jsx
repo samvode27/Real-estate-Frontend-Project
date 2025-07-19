@@ -4,7 +4,7 @@ import { FaSearch, FaCheckCircle } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section className="hero-section d-flex align-items-center text-light" style={{ height: "100vh"}} id="hero">
+    <section className="hero-section d-flex align-items-center text-light" id="home">
       <div className="container text-center">
         <h1 className="display-4 fw-bold mb-3 animate-fade-in">
           Find Your <span className="text-warning">Dream Home</span> Today

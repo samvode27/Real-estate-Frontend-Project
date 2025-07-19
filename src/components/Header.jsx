@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import { Home, Building, HeartHandshake, ThumbsUp, Mail } from "lucide-react";
+import { Home, Building, HeartHandshake, ThumbsUp, Mail, LandPlot } from "lucide-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
 
@@ -35,6 +35,9 @@ const Header = () => {
             </a>
             <a className="nav-link d-flex align-items-center gap-1" href="#values">
               <HeartHandshake size={18} /> Values
+            </a>
+            <a href="#properties" className="nav-link" onClick={() => setExpanded(false)}>
+              <LandPlot className="me-1" /> Properties
             </a>
             <a className="nav-link d-flex align-items-center gap-1" href="#testimonials">
               <ThumbsUp size={18} /> Testimonials

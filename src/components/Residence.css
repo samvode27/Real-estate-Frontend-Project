@@ -1,0 +1,37 @@
+.residencies-section {
+  background: #f8f9fa;
+}
+
+.residency-card {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.residency-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.residency-card img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.residency-card img:hover {
+  transform: scale(1.05);
+}
+
+.filters select {
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease;
+}
+
+.filters select:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
